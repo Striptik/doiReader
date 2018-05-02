@@ -1,5 +1,5 @@
 
-# RDF Reader 
+# DOI Reader 
 
 ![Home](https://image.ibb.co/bJkp4S/Capture_d_e_cran_2018_05_02_a_04_58_14.png)
 
