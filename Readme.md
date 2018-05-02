@@ -40,4 +40,6 @@ Open a window on *localhost:3000/*
 
 It's should be good. Feel free to contact me !
 
+Kevin Loiseleur - kevin.public.mail@gmail.com
+
 
