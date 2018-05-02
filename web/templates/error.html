@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>DOI Reader - Success - {{ title }}</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+    <style>
+      body {
+        text-align: center;
+      }
+      h1 {
+        margin: 20px 0 50px 0;
+      }
+
+      li {
+        color: red;
+      }
+
+    </style>
+  </head>
+  <body>
+    <body>
+      <main>
+          <h1>Error !!</h1>
+          <div class="container">
+
+                <ul>
+                {% for err in errors %}
+                  <li><b>{{ err }}</b></li>
+                {% endfor %}
+                </ul>
+
+          </div>
+          
+          <a href='/'>Retour</a>
+      </main>
+      
+  </body>
+  </body>
+</html>

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>DOI Reader - Success - {{ title }}</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="//cdn.rawgit.com/necolas/normalize.css/master/normalize.css">
+    <link rel="stylesheet" href="//cdn.rawgit.com/milligram/milligram/master/dist/milligram.min.css">
+
+    <style>
+      body {
+        text-align: center;
+      }
+      h1 {
+        margin: 20px 0 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <body>
+      <main>
+          <h1><a href="{{ uri }}">{{ title }}</a> - {{ date }}</h1>
+          <div class="container">
+              
+
+              <h3>Title : <a href="{{ uri }}"> {{ title }}</a></h3>
+              <h4><em>Published in : {{ date }}</em></h4>
+              
+              {% if lenAuth > 1 %}
+              <h3> The authors are : </h3>
+                <ul>
+                {% for author in authors %}
+                  <li><b>{{ author }}</b></li>
+                {% endfor %}
+                </ul>
+              {% else %}
+                <h3> The author is : <b>{{ authors[0] }}</b></h3>
+              {% endif %}
+          </div>
+          
+          <a href='/'>Retour</a>
+      </main>
+      
+  </body>
+  </body>
+</html>
